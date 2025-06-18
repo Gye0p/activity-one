@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Normalization Checker</title>
+  <style>
+    body { font-family: Arial; padding: 20px; max-width: 600px; margin: auto; }
+    input, textarea { width: 100%; padding: 10px; margin: 8px 0; }
+    button { padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <h2>DBMS Normalization Checker</h2>
+  <form method="post" action="process.php">
+    <label>Attributes (e.g., ABCDE):</label>
+    <input type="text" name="attributes" required>
+
+    <label>Functional Dependencies (e.g., A->B, AB->C):</label>
+    <textarea name="fds" rows="4" required></textarea>
+
+    <button type="submit">Check Normalization</button>
+  </form>
+</body>
+</html>
